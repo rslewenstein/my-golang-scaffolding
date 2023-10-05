@@ -87,4 +87,14 @@ func Test_main(){
 EOT
 
 touch handlers.go
+cat > 'handlers.go' << EOT
+
+package cmd
+
+func RENAME_HERE(){
+
+}
+
+EOT
+
 cd ..
