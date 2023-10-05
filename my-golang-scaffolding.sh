@@ -102,3 +102,5 @@ cd ..
 
 go mod init
 go mod tidy
+
+echo "project created!"
