@@ -23,12 +23,27 @@ cat > 'service.go' << EOT
 package $projectName
 
 func main(){
-    
+
 }
 
 EOT
 
 touch service_test.go
+cat > 'service_test.go' << EOT
+
+package $projectName
+
+import(
+    "string"
+    "testing"
+)
+
+func Test_main(){
+
+}
+
+EOT
+
 touch model.go
 
 cd ..
