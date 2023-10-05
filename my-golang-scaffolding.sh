@@ -60,6 +60,31 @@ cd ..
 mkdir cmd
 cd cmd
 touch main.go
+cat > 'main.go' << EOT
+
+package cmd
+
+func main(){
+
+}
+
+EOT
+
 touch main_test.go
+cat > 'main_test.go' << EOT
+
+package cmd
+
+import(
+    "string"
+    "testing"
+)
+
+func Test_main(){
+
+}
+
+EOT
+
 touch handlers.go
 cd ..
