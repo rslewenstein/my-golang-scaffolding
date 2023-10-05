@@ -45,6 +45,15 @@ func Test_main(){
 EOT
 
 touch model.go
+cat > 'model.go' << EOT
+
+package $projectName
+
+type RENAME_HERE struct{
+
+}
+
+EOT
 
 cd ..
 
