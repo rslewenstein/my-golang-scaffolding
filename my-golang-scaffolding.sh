@@ -13,6 +13,7 @@ cat > '.gitignore' << EOT
 go.mod
 go.sum
 .vscode
+my-golang-scaffolding.sh
 EOT
 
 mkdir $projectName
