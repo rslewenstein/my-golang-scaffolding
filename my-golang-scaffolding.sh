@@ -16,6 +16,26 @@ go.sum
 EOT
 
 mkdir $projectName
+cd $projectName
+touch service.go
+cat > 'service.go' << EOT
 
+package $projectName
+
+func main(){
+    
+}
+
+EOT
+
+touch service_test.go
+touch model.go
+
+cd ..
 
 mkdir cmd
+cd cmd
+touch main.go
+touch main_test.go
+touch handlers.go
+cd ..
