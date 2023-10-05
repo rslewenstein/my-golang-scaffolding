@@ -98,3 +98,6 @@ func RENAME_HERE(){
 EOT
 
 cd ..
+
+go mod init
+go mod tidy
