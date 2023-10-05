@@ -8,6 +8,13 @@ cd $projectName
 touch README.md
 echo "# $projectName" >> README.md
 
+touch .gitignore
+cat > '.gitignore' << EOT
+go.mod
+go.sum
+.vscode
+EOT
+
 mkdir $projectName
 
 
