@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "Type de project name: " projectName
+read -p "Type the project name: " projectName
 
 mkdir $projectName
 cd $projectName
