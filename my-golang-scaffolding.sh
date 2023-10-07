@@ -1,13 +1,24 @@
 #!/bin/bash
 
-################################
-# Author: Rafael S. Lewenstein
-# Version: 0.1
-# 
-################################
+cat << EOT 
 
+/*************************************/
+/* My Golang Scaffolding             */
+/* Version: 0.0.1                    */
+/*                                   */
+/* Author: Rafael S. Lewenstein      */
+/* https://github.com/rslewenstein   */
+/*************************************/
+
+EOT
 
 read -p "Type the project name: " projectName
+
+if [ "$projectName" = "" ]; 
+then
+    echo -e "\033[1;91mEnter a valid name\033"
+    exit 0
+fi
 
 mkdir $projectName
 cd $projectName
@@ -110,4 +121,4 @@ cd ..
 go mod init
 go mod tidy
 
-echo "project created!"
+echo -e "\033[1;32mProject created!\033"
